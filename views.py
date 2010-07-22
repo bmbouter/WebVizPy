@@ -8,3 +8,7 @@ def simple(request):
     return render_to_response('WebVizPy/timeseries.htm',
             {'width': width, 'height' : height},
         context_instance=RequestContext(request))
+
+def table(request):
+    return render_to_response('WebVizPy/table.htm',{'width' : 800, 'height' : 800},
+        context_instance=RequestContext(request))
