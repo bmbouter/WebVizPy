@@ -2,6 +2,8 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.template import RequestContext
 from django.shortcuts import render_to_response
 
+#date: July 23, 2010
+
 def timeseries(request):
     width = 800
     height = 400
